@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "YoutubeVideosCLI": {
+      "commandName": "Project",
+      "commandLineArgs": "create --api-key AIzaSyD6orfi3-TWxfMlWHWs-LGFmba_iUg9Rbo --channel UCDLfIVSX9tnV_c50dwbBUSw --output-file-path \"C:\\Users\\sansubr\\Github\\paperbits-demo\\src\\data\\demo.json\" --input-file-path \"C:\\Users\\sansubr\\Github\\paperbits-demo\\src\\data\\source_Demo.json\" --title \"videos\" --channelName  \"Sanjeevi Channel\""
+    }
+  }
+}
