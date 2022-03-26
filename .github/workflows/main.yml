@@ -47,12 +47,11 @@ jobs:
       - name: Publish app
         working-directory: ./paperbits
         run: npm run publish
-        
+          
 
-      - name: Commit and push update
-        run: |-
-         git config --global user.email "ssanjeevi.ss@gmail.com"
-         git config --global user.name "SSanjeevi"
-         git add paperbits/dist
-         git commit -m "Updated Youtube Video website from GitHub Actions"
-         git push
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./paperbits/dist/website
+          publish_branch: gh-pages
