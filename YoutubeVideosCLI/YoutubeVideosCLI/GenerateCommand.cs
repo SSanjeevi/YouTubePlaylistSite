@@ -178,7 +178,7 @@ namespace YoutubeVideosCLI
                     });
                     File.WriteAllText(outputfilepathStr, outJson);
 
-                    return 1;
+                    return 0;
                 });
             }
             catch (Exception ex)
