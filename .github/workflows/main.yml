@@ -32,7 +32,7 @@ jobs:
       - run: dotnet build YoutubeVideosCLI.csproj
         working-directory: ./YoutubeVideosCLI/YoutubeVideosCLI
       
-      - run: dotnet run create --api-key AIzaSyD6orfi3-TWxfMlWHWs-LGFmba_iUg9Rbo --channel UCDLfIVSX9tnV_c50dwbBUSw --output-file-path "./../../paperbits/src/data/demo.json" --input-file-path "./../../paperbits/src/data/source_Demo.json" --title "videos" --channelName  "Sanjeevi Channel"
+      - run: dotnet run create --api-key ${{ secrets.GoogleApiKey }} --channel UCDLfIVSX9tnV_c50dwbBUSw --output-file-path "./../../paperbits/src/data/demo.json" --input-file-path "./../../paperbits/src/data/source_Demo.json" --title "videos" --channelName  "Sanjeevi Channel"
         working-directory: ./YoutubeVideosCLI/YoutubeVideosCLI
 
       - name: Setup Node
